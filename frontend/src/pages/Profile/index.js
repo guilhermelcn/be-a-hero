@@ -21,7 +21,6 @@ export default function Profile() {
         Authorization: ongId,
       }
     }).then(res => {
-      console.log(res);
       setIncidents(res.data);
     })
   }, [ongId]);
